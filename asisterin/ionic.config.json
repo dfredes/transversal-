@@ -1,0 +1,7 @@
+{
+  "name": "asisterin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
