@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'escaner',
+    loadChildren: () => import('./pages/escaner/escaner.module').then( m => m.EscanerPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'menu-alum',
+    loadChildren: () => import('./pages/menu-alum/menu-alum.module').then( m => m.MenuAlumPageModule)
+  },
+  {
+    path: 'menu-prof',
+    loadChildren: () => import('./pages/menu-prof/menu-prof.module').then( m => m.MenuProfPageModule)
+  },
 ];
 
 @NgModule({
