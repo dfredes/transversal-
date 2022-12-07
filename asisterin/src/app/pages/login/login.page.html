@@ -6,4 +6,23 @@
 
 <ion-content>
 
-</ion-content>
+  <ion-content class="background" padding>
+
+    <ion-card>
+      <img src="'../../../../assets/icon/Logo Asisterin.PNG">
+      
+        <ion-item>
+          <ion-label position="floating"> Usuario </ion-label>
+          <ion-input [(ngModel)]="usuario"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label position="floating"> Contraseña </ion-label>
+          <ion-input type="password" [(ngModel)]="contrasena"></ion-input>
+        </ion-item>
+        
+      
+      <ion-button expand="block" (click)="()">Iniciar Sesion</ion-button>
+      <ion-button expand="block" color="tertiary" [routerLink]="['/ticket-al']"> <label style="font-size: 12px;" >¿Olvidaste tu Contraseña?</label></ion-button>
+    </ion-card> 
+    </ion-content>
