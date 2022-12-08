@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { EscanerPageRoutingModule } from './escaner-routing.module';
 
 import { EscanerPage } from './escaner.page';
+import { QRCodeModule } from 'angularx-qrcode';
+//import { QRCodeErrorCorrectionLevel } from "qrcode";
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EscanerPageRoutingModule
+    EscanerPageRoutingModule,
+    QRCodeModule
   ],
   declarations: [EscanerPage]
 })

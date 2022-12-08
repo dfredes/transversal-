@@ -1,9 +1,13 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>escaner</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Escaner QR</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <ion-button expand="block" class="ion-margin" (click)="startScan">Escanear QR</ion-button>
+  <ion-item>
+    <ion-label class="ion-text-warp">Resultado del escaneo:{{scannedResult}} </ion-label>
+  </ion-item>
 </ion-content>
